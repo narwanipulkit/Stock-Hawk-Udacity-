@@ -30,7 +30,11 @@
     <string name="already_saved">This stock is already saved!</string>
 
     <!-- No Data to plot Graph -->
-    <string name="empty_graph">"No Previous Data Found.Graph Empty"</string>
+    <string name="empty_graph">No Previous Data Found.Graph Empty</string>
+
+    <string name="no_stocks">No Stocks Added</string>
+
+    <string name="extra_item">com.sam._chordas.android.stockhawk.EXTRA_ITEM</string>
 
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>

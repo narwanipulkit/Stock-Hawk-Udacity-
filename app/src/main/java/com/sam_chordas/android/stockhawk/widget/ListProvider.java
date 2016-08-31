@@ -36,15 +36,14 @@ public class ListProvider implements RemoteViewsService.RemoteViewsFactory {
                 AppWidgetManager.INVALID_APPWIDGET_ID);
 
         c = context.getContentResolver().query(QuoteProvider.Quotes.CONTENT_URI,
-                new String[] {QuoteColumns.SYMBOL,QuoteColumns.BIDPRICE,QuoteColumns.CHANGE },"is_current = ? ", new String[]{"1"}, null);
-        Log.d("Count",String.valueOf(c.getCount()));
+                new String[]{QuoteColumns.SYMBOL, QuoteColumns.BIDPRICE, QuoteColumns.CHANGE}, "is_current = ? ", new String[]{"1"}, null);
+
 
     }
 
 
     @Override
     public void onCreate() {
-
 
 
     }
@@ -70,25 +69,23 @@ public class ListProvider implements RemoteViewsService.RemoteViewsFactory {
 
         RemoteViews remoteView = new RemoteViews(
                 context.getPackageName(), R.layout.list_item_quote);
-        Intent details=new Intent();
+        Intent details = new Intent();
 
-        if(c.getCount()!=0)
-        {
+        if (c.getCount() != 0) {
             c.moveToPosition(position);
 
-            remoteView.setTextViewText(R.id.stock_symbol,c.getString(0) );
-            remoteView.setTextViewText(R.id.bid_price,c.getString(1) );
+            remoteView.setTextViewText(R.id.stock_symbol, c.getString(0));
+            remoteView.setTextViewText(R.id.bid_price, c.getString(1));
             remoteView.setTextViewText(R.id.change, c.getString(2));
-            details.putExtra("symbol",c.getString(0));
+            details.putExtra("symbol", c.getString(0));
 
         }
 
 
+        details.putExtra("com.sam._chordas.android.stockhawk.EXTRA_ITEM", position);
+        details.putExtra("position", position);
 
-        details.putExtra("com.sam._chordas.android.stockhawk.EXTRA_ITEM",position);
-        details.putExtra("position",position);
-
-        remoteView.setOnClickFillInIntent(R.id.list_row,details);
+        remoteView.setOnClickFillInIntent(R.id.list_row, details);
 
 
         return remoteView;

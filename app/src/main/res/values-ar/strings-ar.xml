@@ -18,10 +18,6 @@
     <string name="content_test">بحث عن الأوراق المالية رمز</string>
 
 
-
-
-
-
     <!--No Network Toast-->
     <string name="network_toast">اتصال إنترنت المطلوبة</string>
     <!--Error in Adding Stock Toast -->
