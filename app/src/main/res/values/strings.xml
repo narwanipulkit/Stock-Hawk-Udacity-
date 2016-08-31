@@ -1,0 +1,37 @@
+<resources>
+
+    <!--Application Name -->
+    <string name="app_name">Stock Hawk</string>
+
+
+    <string name="action_example">Example action</string>
+
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="action_change_units">Change Units</string>
+
+    <!--Dialog Box text-Symbol Search -->
+    <string name="symbol_search">Symbol Search</string>
+    <!--Dialog Box Content-Search for a stock symbol -->
+    <string name="content_test">Search for a Stock Symbol</string>
+
+    <!--Dialog Box hint-No translation -->
+    <string name="input_hint" translatable="false">FB</string>
+
+    <string name="input_prefill" translatable="false"></string>
+
+    <!--No Network Toast-->
+    <string name="network_toast">Uh-oh! This app requires an internet connection</string>
+    <!--Error in Adding Stock Toast -->
+    <string name="error_toast">Error Adding Stock</string>
+    <!-- Same Stock Added -->
+    <string name="already_saved">This stock is already saved!</string>
+
+    <!-- No Data to plot Graph -->
+    <string name="empty_graph">"No Previous Data Found.Graph Empty"</string>
+
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>

@@ -1,0 +1,37 @@
+<resources>
+
+    <!--Application Name -->
+    <string name="app_name">الأسهم هوك</string>
+
+
+    <string name="action_example">العمل سبيل المثال</string>
+
+
+    <string name="action_settings">إعدادات</string>
+
+
+    <string name="action_change_units">وحدات التغيير</string>
+
+    <!--Dialog Box text-Symbol Search -->
+    <string name="symbol_search">رمز البحث</string>
+    <!--Dialog Box Content-Search for a stock symbol -->
+    <string name="content_test">بحث عن الأوراق المالية رمز</string>
+
+
+
+
+
+
+    <!--No Network Toast-->
+    <string name="network_toast">اتصال إنترنت المطلوبة</string>
+    <!--Error in Adding Stock Toast -->
+    <string name="error_toast">الخطأ المالية إضافة</string>
+    <!-- Same Stock Added -->
+    <string name="already_saved">يتم حفظ هذه الأسهم بالفعل!</string>
+
+    <!-- No Data to plot Graph -->
+    <string name="empty_graph">لا بيانات السابقة تم العثور عليها. الرسم البياني الخالي</string>
+
+
+    <string name="add_widget">إضافة القطعة</string>
+</resources>
